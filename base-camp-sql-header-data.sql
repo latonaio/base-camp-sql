@@ -1,8 +1,13 @@
 CREATE TABLE `base_camp_header_data`
 (
   `BaseCamp`                           varchar(20) NOT NULL,
-  `LocationID`                         varchar(20) NOT NULL,
+  `LocationID`                         varchar(20) DEFAULT NULL,
   `LocationName`                       varchar(20) DEFAULT NULL,
+  `BaseCampIsMovable`                  tinyint(1) DEFAULT NULL,
+  `Equipment`                          varchar(18) DEFAULT NULL,
+  `Construction`                       varchar(18) DEFAULT NULL,
+  `Owner`                              varchar(20) DEFAULT NULL,
+  `Status`                             varchar(40) DEFAULT NULL,
   `OperationBasicStartDateTime`        varchar(20) DEFAULT NULL,
   `OperationBasicEndDateTime`          varchar(20) DEFAULT NULL,
   `OperationBasicStartDate`            varchar(20) DEFAULT NULL,
